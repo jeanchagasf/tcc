@@ -1,0 +1,18 @@
+### URL's amigáveis ###
+
+RewriteEngine ON
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1
+
+
+
+### Bloqueio de acesso externo ###
+
+Order Deny,Allow
+Deny from all
+Allow from 10.0.0.0/8
+Allow from 189.38.85.10
+Allow from 189.38.85.9
+Allow from 127.0.0.1
+Allow from 177.134.68.122

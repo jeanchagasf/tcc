@@ -19,19 +19,22 @@ define('_DOMAIN', 'http://' . $_SERVER['HTTP_HOST']);
 ### PATH ###
 
 /** O path dos controladores da aplicação */
-define('CONTROLLERS', 'application/controllers/');
+define('CONTROLLERS', 'applications/controllers');
 
 /** O use dos controladores da aplicação */
-define('USE_CONTROLLERS', 'application\controllers');
+define('USE_CONTROLLERS', 'applications\controllers');
 
 /** O path dos modelos da aplicação */
-define('MODELS', 'application/models/');
+define('MODELS', 'applications/models');
 
 /** O path das visualizações da aplicação */
-define('VIEWS', 'resources/views/');
+define('VIEWS', 'applications/views');
 
 /** O path dos espólios da aplicação */
-define('ASSETS', 'resources/assets/');
+define('ASSETS', 'resources/assets');
+
+/** O path dos espólios da aplicação */
+define('ERRORS', 'applications/views/erros');
 
 ### DATABASE ###
 
