@@ -132,7 +132,7 @@
           <entry key="htaccess" value="1" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
-          <entry key="php" value="29" />
+          <entry key="php" value="30" />
           <entry key="phtml" value="6" />
         </counts>
       </usages-collector>
@@ -140,7 +140,7 @@
         <counts>
           <entry key="JSON" value="5" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="36" />
           <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
@@ -155,7 +155,7 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="json" value="10" />
-          <entry key="php" value="414" />
+          <entry key="php" value="417" />
           <entry key="phtml" value="18" />
           <entry key="txt" value="67" />
         </counts>
@@ -163,7 +163,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="10" />
-          <entry key="PHP" value="432" />
+          <entry key="PHP" value="435" />
           <entry key="PLAIN_TEXT" value="69" />
         </counts>
       </usages-collector>
@@ -198,11 +198,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraries/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="130">
               <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libraries/code.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -219,7 +228,6 @@
         <option value="$PROJECT_DIR$/components/composer.json" />
         <option value="$PROJECT_DIR$/libraries/logger.php" />
         <option value="$PROJECT_DIR$/libraries/log.php" />
-        <option value="$PROJECT_DIR$/libraries/code.php" />
         <option value="$PROJECT_DIR$/settings.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/libraries/controller.php" />
@@ -233,6 +241,7 @@
         <option value="$PROJECT_DIR$/applications/views/index/index.phtml" />
         <option value="$PROJECT_DIR$/applications/models/index.php" />
         <option value="$PROJECT_DIR$/libraries/system.php" />
+        <option value="$PROJECT_DIR$/libraries/code.php" />
       </list>
     </option>
   </component>
@@ -1908,18 +1917,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534857806004</updated>
       <workItem from="1534857807713" duration="373000" />
-      <workItem from="1534858229378" duration="10558000" />
+      <workItem from="1534858229378" duration="10955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10675000" />
+    <option name="totallyTimeSpent" value="11072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1080" height="1922" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25435203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25435203" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1932,7 +1941,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.54241073" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.54241073" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1978,13 +1987,6 @@
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -2094,8 +2096,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="130">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
