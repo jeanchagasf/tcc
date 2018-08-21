@@ -9,13 +9,23 @@
  **/
 
 /**
+ * Determante de tempo padrão do sistema
+ */
+
+date_default_timezone_set('America/Sao_Paulo');
+
+/**
  *   Reportar todos erros do PHP
  **/
 
 error_reporting(E_ALL);
 
-/**
- * Load do Environment
- **/
+if (!defined('ROOT_PATH')) {
 
-require_once('settings.php');
+    chdir(dirname(__FILE__));
+    define('ROOT_PATH', dirname(__FILE__));
+    define('DS', DIRECTORY_SEPARATOR);
+    require_once(ROOT_PATH . DS . 'libraries/config.php');
+}
+
+require_once(ROOT_PATH . DS .'settings.php');

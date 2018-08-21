@@ -6,18 +6,8 @@
  * Time: 11:22
  */
 
-/**
- * Determante de tempo padrão do sistema
- */
-
-date_default_timezone_set('America/Sao_Paulo');
-
-if (!defined('ROOT_PATH')) {
-
-    define('ROOT_PATH', dirname(__FILE__));
-    define('DS', DIRECTORY_SEPARATOR);
-    require_once(ROOT_PATH . DS . 'libraries/config.php');
-}
+use  \libraries\system as Application;
 
 require_once(ROOT_PATH . DS . "components/vendor/autoload.php");
 
+Application::run();
