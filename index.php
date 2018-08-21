@@ -18,4 +18,4 @@ error_reporting(E_ALL);
  * Load do Environment
  **/
 
-require_once ('settings.php');
+require_once('settings.php');

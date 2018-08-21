@@ -19,7 +19,8 @@ class ComposerAutoloaderInitaa5c95231a773f3c7cc919ca8f5df7aa
             return self::$loader;
         }
 
-        spl_autoload_register(array('ComposerAutoloaderInitaa5c95231a773f3c7cc919ca8f5df7aa', 'loadClassLoader'), true, true);
+        spl_autoload_register(array('ComposerAutoloaderInitaa5c95231a773f3c7cc919ca8f5df7aa', 'loadClassLoader'), true,
+            true);
         self::$loader = $loader = new \Composer\Autoload\ClassLoader();
         spl_autoload_unregister(array('ComposerAutoloaderInitaa5c95231a773f3c7cc919ca8f5df7aa', 'loadClassLoader'));
 

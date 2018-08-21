@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c38ea001-7239-4e66-bbf6-9324093cea59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../dev/billing/vendor/bramus/ansi-php/" />
     <ignored path="$PROJECT_DIR$/../../dev/billing/vendor/bramus/monolog-colored-line-formatter/" />
@@ -109,16 +116,16 @@
     <session id="-1683622750">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="3" />
+          <entry key="json" value="5" />
           <entry key="md" value="1" />
-          <entry key="php" value="4" />
+          <entry key="php" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="3" />
+          <entry key="JSON" value="5" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="4" />
+          <entry key="PHP" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -130,14 +137,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="6" />
-          <entry key="php" value="44" />
+          <entry key="json" value="10" />
+          <entry key="php" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="6" />
-          <entry key="PHP" value="44" />
+          <entry key="JSON" value="10" />
+          <entry key="PHP" value="86" />
         </counts>
       </usages-collector>
     </session>
@@ -148,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -163,10 +170,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../dev/billing/public/index.php">
+        <entry file="file://$PROJECT_DIR$/libraries/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -179,9 +186,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/components/composer.json" />
         <option value="$PROJECT_DIR$/../../dev/billing/public/index.php" />
+        <option value="$PROJECT_DIR$/components/composer.json" />
+        <option value="$PROJECT_DIR$/libraries/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/settings.php" />
       </list>
     </option>
@@ -1817,18 +1825,8 @@
             </path>
             <path>
               <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="billing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="billing" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="tcc" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1865,12 +1863,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534857806004</updated>
       <workItem from="1534857807713" duration="373000" />
-      <workItem from="1534858229378" duration="3051000" />
+      <workItem from="1534858229378" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3168000" />
+    <option name="totallyTimeSpent" value="3802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1080" height="1922" extended-state="6" />
@@ -1905,20 +1903,47 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/components/composer.json">
+    <entry file="file://$PROJECT_DIR$/../../dev/billing/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/components/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../dev/billing/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../dev/billing/config/development/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../dev/billing/config/config.error_handler.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../../dev/billing/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
