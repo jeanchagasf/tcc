@@ -180,7 +180,7 @@
         <entry file="file://$PROJECT_DIR$/applications/controllers/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -206,8 +206,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applications/models/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="150">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -1873,48 +1873,6 @@
               <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
               <item name="tcc" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -1950,16 +1908,15 @@
       <option name="presentableId" value="Default" />
       <updated>1534857806004</updated>
       <workItem from="1534857807713" duration="373000" />
-      <workItem from="1534858229378" duration="9959000" />
+      <workItem from="1534858229378" duration="10076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10076000" />
+    <option name="totallyTimeSpent" value="10193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1080" height="1922" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25435203" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2085,7 +2042,7 @@
     <entry file="file://$PROJECT_DIR$/applications/controllers/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -2136,8 +2093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/models/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

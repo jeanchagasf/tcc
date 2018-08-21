@@ -13,7 +13,8 @@ use library\controller;
 
 class index extends controller
 {
-    public function index_action(){
+    public function index_action()
+    {
         $this->page('index');
     }
 }

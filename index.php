@@ -28,4 +28,4 @@ if (!defined('ROOT_PATH')) {
     require_once(ROOT_PATH . DS . 'libraries/config.php');
 }
 
-require_once(ROOT_PATH . DS .'settings.php');
+require_once(ROOT_PATH . DS . 'settings.php');

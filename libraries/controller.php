@@ -4,17 +4,19 @@
 namespace library;
 
 
-class controller extends system{
+class controller extends system
+{
 
 
-    protected function page($view){
+    protected function page($view)
+    {
 
 
-        if(!file_exists(ROOT_PATH . DS . VIEWS . $view. '.phtml')){
+        if (!file_exists(ROOT_PATH . DS . VIEWS . $view . '.phtml')) {
 
             throw new \Exception ('View does not exist', 404);
 
-        }else{
+        } else {
 
             new view($view);
         }

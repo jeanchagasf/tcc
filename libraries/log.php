@@ -1,10 +1,10 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: jean
-     * Date: 29/05/18
-     * Time: 13:14
-     */
+/**
+ * Created by PhpStorm.
+ * User: jean
+ * Date: 29/05/18
+ * Time: 13:14
+ */
 
 namespace library;
 
@@ -24,7 +24,8 @@ class log implements logger
     private static $file_error_log;
 
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $this->setIP();
         $this->setUser();
@@ -36,8 +37,8 @@ class log implements logger
     }
 
 
-
-    private function setIP(){
+    private function setIP()
+    {
 
         $this->_ip = array(
             'externo' => $_SERVER['SERVER_ADDR'],
@@ -46,68 +47,72 @@ class log implements logger
     }
 
 
+    private function setUser()
+    {
 
-    private function setUser(){
-
-        if(isset($_SESSION)){
+        if (isset($_SESSION)) {
 
             $this->_username = $_SESSION['array']['email'];
 
-        }else{
+        } else {
 
             $this->_username = 'Unknown';
         }
 
     }
 
-    private function setDate(){
+    private function setDate()
+    {
 
         $this->_date = date("Y-m-d H:i:s");
     }
 
-    private function setMethod(){
+    private function setMethod()
+    {
 
         $this->method = $_SERVER['REQUEST_METHOD'];
     }
 
 
+    private function setRequest()
+    {
 
-    private function setRequest(){
 
-
-
-        if(empty($_SERVER['QUERY_STRING'])){
+        if (empty($_SERVER['QUERY_STRING'])) {
 
             $this->request = 'route=index/index_action';
 
-        }else{
+        } else {
 
             $this->request = $_SERVER['QUERY_STRING'];
         }
     }
 
-    private function setProtocol(){
+    private function setProtocol()
+    {
 
         $this->protocol = $_SERVER['SERVER_PROTOCOL'];
     }
 
     ##################################################
 
-    public function access_log($response_code){
+    public function access_log($response_code)
+    {
 
         $this->log = $this->registry_access($response_code);
 
-        self::$file_access_log = fopen(ROOT_PATH."/logs/access.log", "a");
-        fwrite(self::$file_access_log, "$this->log".PHP_EOL);
+        self::$file_access_log = fopen(ROOT_PATH . "/logs/access.log", "a");
+        fwrite(self::$file_access_log, "$this->log" . PHP_EOL);
         fclose(self::$file_access_log);
     }
 
-    public function error_log($response_code, $exception){
+    public function error_log($response_code, $exception)
+    {
 
         $this->log = $this->registry_error($response_code, $exception);
 
-        self::$file_error_log = fopen(ROOT_PATH."/logs/error.log", "a");
-        fwrite(self::$file_error_log, "$this->log".PHP_EOL);
+        self::$file_error_log = fopen(ROOT_PATH . "/logs/error.log", "a");
+        fwrite(self::$file_error_log, "$this->log" . PHP_EOL);
         fclose(self::$file_error_log);
 
     }
@@ -117,11 +122,11 @@ class log implements logger
      * @return 10.17.56.122 [10.7.8.243] - Unknown [2018-05-29 14:46:32] "GET route=teste/block HTTP/1.1" 403
      */
 
-    private function registry_access($response_code){
+    private function registry_access($response_code)
+    {
 
 
-
-        return $this->_ip['externo'] . ' ['. $this->_ip['interno'] .'] - '. $this->_username .' ['. $this->_date .'] "'. $this->method .' '. $this->request .' '. $this->protocol .'" '. $response_code ;
+        return $this->_ip['externo'] . ' [' . $this->_ip['interno'] . '] - ' . $this->_username . ' [' . $this->_date . '] "' . $this->method . ' ' . $this->request . ' ' . $this->protocol . '" ' . $response_code;
 
     }
 
@@ -131,8 +136,9 @@ class log implements logger
      *
      */
 
-    private function registry_error($response_code, $exception){
+    private function registry_error($response_code, $exception)
+    {
 
-        return '['.$this->_date .']  "'. $this->method .'  '. $this->request .' '. $this->protocol .'" '. $response_code.PHP_EOL.$exception;
+        return '[' . $this->_date . ']  "' . $this->method . '  ' . $this->request . ' ' . $this->protocol . '" ' . $response_code . PHP_EOL . $exception;
     }
 }

@@ -9,22 +9,25 @@
 namespace library;
 
 
-class code{
+class code
+{
 
-    public function setLog($response_code, $exception = null){
+    public function setLog($response_code, $exception = null)
+    {
 
         http_response_code($response_code);
 
         log::access_log($response_code);
 
-        if(!empty($exception)){
+        if (!empty($exception)) {
 
             return $this->error($response_code, $exception);
         }
     }
 
 
-    private function error($response_code, $exception){
+    private function error($response_code, $exception)
+    {
 
 
         log::error_log($response_code, $exception);

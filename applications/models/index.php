@@ -11,7 +11,8 @@ namespace applications\models;
 
 class index
 {
-    public function teste(){
+    public function teste()
+    {
 
     }
 }
