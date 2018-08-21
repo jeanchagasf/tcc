@@ -16,7 +16,7 @@ class system
     private $_explode;
 
     public static $_controller;
-    public $_action;
+    public static $_action;
     public $_params;
 
 
@@ -69,7 +69,7 @@ class system
             $aux = $this->_explode[1];
         }
 
-        $this->_action = $aux;
+        self::$_action = $aux;
     }
 
     private function setParams()
@@ -167,7 +167,8 @@ class system
 
 
                 $action = self::$_action;
-                $app->$action();
+                echo str_replace(["\n","\r","\t"], '', $app->$action());
+
                 new code(200);
                 exit();
             }
