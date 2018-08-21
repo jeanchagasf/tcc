@@ -3,24 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="c38ea001-7239-4e66-bbf6-9324093cea59" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/controllers/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/models/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/views/includes/header.phtml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/applications/views/includes/html_body.phtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/views/includes/html_header.phtml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/applications/views/index/index.phtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/code.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/log.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/libraries/logger.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/libraries/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/controllers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/applications/controllers/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/models/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/applications/models/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/views/includes/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/applications/views/includes/header.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/views/includes/html_header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/applications/views/includes/html_header.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/ClassLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_namespaces.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_real.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/code.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/system.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../dev/billing/vendor/bramus/ansi-php/" />
@@ -131,7 +132,7 @@
           <entry key="htaccess" value="1" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
-          <entry key="php" value="26" />
+          <entry key="php" value="29" />
           <entry key="phtml" value="6" />
         </counts>
       </usages-collector>
@@ -139,7 +140,7 @@
         <counts>
           <entry key="JSON" value="5" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="32" />
+          <entry key="PHP" value="35" />
           <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
@@ -154,7 +155,7 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="json" value="10" />
-          <entry key="php" value="407" />
+          <entry key="php" value="414" />
           <entry key="phtml" value="18" />
           <entry key="txt" value="67" />
         </counts>
@@ -162,7 +163,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="10" />
-          <entry key="PHP" value="425" />
+          <entry key="PHP" value="432" />
           <entry key="PLAIN_TEXT" value="69" />
         </counts>
       </usages-collector>
@@ -177,37 +178,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/controllers/index.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/view.php">
+        <entry file="file://$PROJECT_DIR$/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/views/index/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="180">
+              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/applications/models/index.php">
+        <entry file="file://$PROJECT_DIR$/libraries/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="345">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -227,7 +222,6 @@
         <option value="$PROJECT_DIR$/libraries/code.php" />
         <option value="$PROJECT_DIR$/settings.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/libraries/system.php" />
         <option value="$PROJECT_DIR$/libraries/controller.php" />
         <option value="$PROJECT_DIR$/libraries/config.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
@@ -238,6 +232,7 @@
         <option value="$PROJECT_DIR$/libraries/view.php" />
         <option value="$PROJECT_DIR$/applications/views/index/index.phtml" />
         <option value="$PROJECT_DIR$/applications/models/index.php" />
+        <option value="$PROJECT_DIR$/libraries/system.php" />
       </list>
     </option>
   </component>
@@ -1873,6 +1868,11 @@
               <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
               <item name="tcc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcc" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1908,17 +1908,18 @@
       <option name="presentableId" value="Default" />
       <updated>1534857806004</updated>
       <workItem from="1534857807713" duration="373000" />
-      <workItem from="1534858229378" duration="10076000" />
+      <workItem from="1534858229378" duration="10558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10193000" />
+    <option name="totallyTimeSpent" value="10675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1080" height="1922" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25435203" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25435203" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1931,7 +1932,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.54241073" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.54241073" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2001,30 +2002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="170" column="16" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2036,13 +2013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -2077,10 +2047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/view.php">
+    <entry file="file://$PROJECT_DIR$/applications/models/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -2091,10 +2061,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/models/index.php">
+    <entry file="file://$PROJECT_DIR$/libraries/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="256">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/controllers/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
         </state>
       </provider>
     </entry>

@@ -9,14 +9,13 @@
 namespace libraries;
 
 
-use phpDocumentor\Reflection\Types\Self_;
 
 class system
 {
     private static $_url;
     private $_explode;
 
-    public $_controller;
+    public static $_controller;
     public $_action;
     public $_params;
 
@@ -54,7 +53,7 @@ class system
 
     private function setController()
     {
-        $this->_controller = "application\\controllers\\" . $this->_explode[0];
+        self::$_controller = "applications\\controllers\\" . $this->_explode[0];
     }
 
     private function setAction()
