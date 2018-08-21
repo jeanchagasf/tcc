@@ -13,11 +13,11 @@ class ComposerStaticInitaa5c95231a773f3c7cc919ca8f5df7aa
         ),
         'l' => 
         array (
-            'library\\' => 8,
+            'libraries\\' => 10,
         ),
         'a' => 
         array (
-            'application\\' => 12,
+            'applications\\' => 13,
         ),
     );
 
@@ -26,13 +26,13 @@ class ComposerStaticInitaa5c95231a773f3c7cc919ca8f5df7aa
         array (
             0 => __DIR__ . '/../..' . '/../tests',
         ),
-        'library\\' => 
+        'libraries\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/../library',
+            0 => __DIR__ . '/../..' . '/../libraries',
         ),
-        'application\\' => 
+        'applications\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/../application',
+            0 => __DIR__ . '/../..' . '/../applications',
         ),
     );
 
