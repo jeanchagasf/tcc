@@ -6,8 +6,8 @@
  * Time: 11:22
  */
 
-use  \libraries\system as Application;
+use  \libraries\system as App;
 
 require_once(ROOT_PATH . DS . "components/vendor/autoload.php");
 
-Application::run();
+(new App())->run();

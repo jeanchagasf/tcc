@@ -8,16 +8,19 @@
 
 namespace libraries;
 
+use libraries\logger;
 
 class code
 {
+    private $log;
 
-    public function setLog($response_code, $exception = null)
+    public function handler(logger $logger, $response_code, $exception = null)
     {
+        $this->log = $logger;
 
         http_response_code($response_code);
 
-        log::access_log($response_code);
+        $this->log->access_log($response_code);
 
         if (!empty($exception)) {
 
@@ -25,12 +28,9 @@ class code
         }
     }
 
-
     private function error($response_code, $exception)
     {
-
-
-        log::error_log($response_code, $exception);
+        $this->log->error_log($response_code, $exception);
 
         new view($response_code);
     }

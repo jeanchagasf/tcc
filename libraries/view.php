@@ -6,7 +6,7 @@
  * Time: 13:53
  */
 
-namespace library;
+namespace libraries;
 
 
 class view
@@ -16,16 +16,13 @@ class view
 
     public function __construct($page)
     {
-
         $this->page = $page;
         $this->html_header();
         $this->html_body();
-
     }
 
     public function html_header()
     {
-
         return require_once(ROOT_PATH . DS . VIEWS . DS . 'includes/html_header.phtml');
     }
 
@@ -44,9 +41,9 @@ class view
     public function body()
     {
 
-        if (file_exists(ROOT_PATH . DS . VIEWS . DS . $this->page . $this->page . '.phtml')) {
+        if (file_exists(ROOT_PATH . DS . VIEWS . DS . $this->page . DS . $this->page . '.phtml')) {
 
-            return require_once(ROOT_PATH . DS . VIEWS . DS . $this->page . $this->page . '.phtml');
+            return require_once(ROOT_PATH . DS . VIEWS . DS . $this->page . DS . $this->page . '.phtml');
 
         } elseif (file_exists(ROOT_PATH . DS . ASSETS . DS . "erros" . DS . $this->page . ".phtml")) {
 
@@ -60,8 +57,12 @@ class view
 
     public function title()
     {
+        if($this->page = 'index'){
 
-        return ucfirst($this->page);
+            return "✅ ".ucfirst('home');
+        }
+
+        return "✅ ".ucfirst($this->page);
     }
 
     public function breadcrumb()

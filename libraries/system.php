@@ -8,26 +8,33 @@
 
 namespace libraries;
 
-
+use libraries\log as Log;
+use libraries\code as Code;
 
 class system
 {
     private static $_url;
     private $_explode;
 
-    public static $_controller;
-    public static $_action;
+    public $_controller;
+    public $_action;
     public $_params;
 
+    public $log;
+    public $code;
 
     public function __construct()
     {
+        $this->log = new Log;
+        $this->code = new Code;
+
 
         $this->setUrl();
         $this->setExplode();
         $this->setController();
         $this->setAction();
         $this->setParams();
+
     }
 
 
@@ -53,7 +60,7 @@ class system
 
     private function setController()
     {
-        self::$_controller = "applications\\controllers\\" . $this->_explode[0];
+        $this->_controller = "applications\\controllers\\" . $this->_explode[0];
     }
 
     private function setAction()
@@ -69,7 +76,7 @@ class system
             $aux = $this->_explode[1];
         }
 
-        self::$_action = $aux;
+        $this->_action = $aux;
     }
 
     private function setParams()
@@ -124,59 +131,46 @@ class system
         return $this->_params[$name];
     }
 
-    public static function run()
+    public function run()
     {
 
 
-        $class = str_replace('\\', '/', strtolower(self::$_controller));
+        $class = str_replace('\\', '/', strtolower($this->_controller));
 
         $path = ROOT_PATH . DS . $class . '.php';
 
 
         try {
 
-
-            if (!@include_once($path)) {
-
-                throw new \Exception ($path . ' does not exist', 404);
-            }
-
             if (!file_exists($path)) {
 
-                throw new \Exception ($path . ' does not exist', 404);
+                throw new \Exception ('Class ' . $path . ' does not exist', 404);
+
             } else {
 
-                $app = new self::$_controller;
+                $app = new $this->_controller;
+
             }
 
-        } catch (\Exception $e) {
-
-            new code($e->getCode(), $e->getMessage());
-            exit();
-        }
+            if (!method_exists($app, $this->_action)) {
 
 
-        try {
-
-            if (!method_exists($app, self::$_action)) {
-
-
-                throw new \Exception ('Method does not exist', 404);
+                throw new \Exception ('Method ' . $this->_action . ' does not exist', 404);
 
             } else {
 
 
-                $action = self::$_action;
-                echo str_replace(["\n","\r","\t"], '', $app->$action());
+                $action = $this->_action;
 
-                new code(200);
-                exit();
+                $app->$action();
+
+                $this->code->handler($this->log, 200);
             }
 
         } catch (\Exception $e) {
 
-            new code($e->getCode(), $e->getMessage());
-            exit();
+            $this->code->handler($this->log, $e->getCode(), $e->getMessage());
+
         }
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace library;
+namespace libraries;
 
 
 class controller extends system
@@ -12,7 +12,7 @@ class controller extends system
     {
 
 
-        if (!file_exists(ROOT_PATH . DS . VIEWS . $view . '.phtml')) {
+        if (!file_exists(ROOT_PATH . DS . VIEWS . DS . $view . DS . $view . '.phtml')) {
 
             throw new \Exception ('View does not exist', 404);
 

@@ -2,19 +2,18 @@
 /**
  * Created by PhpStorm.
  * User: jean
- * Date: 21/08/18
- * Time: 14:34
+ * Date: 19/09/18
+ * Time: 14:46
  */
 
 namespace applications\controllers;
 
 
-use libraries\controller;
-
-class index extends controller
+class Index
 {
     public function index_action()
     {
-	    return $this->page('index');
+        return 'oi';
     }
+
 }

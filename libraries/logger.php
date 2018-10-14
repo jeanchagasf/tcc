@@ -6,7 +6,7 @@
  * Time: 14:45
  */
 
-namespace library;
+namespace libraries;
 
 
 interface logger
